@@ -33,6 +33,8 @@ requirements:
     #
     # Extras
     - cartopy >=0.21
+    - dask-core
+    - gdown
     - joblib
     - netcdf4
     - pygeos
