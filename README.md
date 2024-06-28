@@ -11,6 +11,8 @@ Summary: TAMS (Tracking Algorithm for Mesoscale Convective Systems)
 
 Development: https://github.com/knubez/TAMS
 
+Documentation: https://tams.readthedocs.io
+
 Current build status
 ====================
 
