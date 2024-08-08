@@ -37,8 +37,7 @@ requirements:
     - gdown
     - joblib
     - netcdf4
-    - pygeos
-    - regionmask
+    - regionmask >=0.9
     - scipy
 
 test:
