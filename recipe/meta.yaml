@@ -1,5 +1,5 @@
 {% set name = "tams" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/knubez/TAMS/archive/v{{ version }}.tar.gz
-  sha256: ae79a3ed82e60468fcf24780dd9389a36458cf917f96902055ae4eb9c5231c01
+  sha256: 500652cc57ff700b695ec3b88abcefcf6837a287d97ab2f83bcf34b4abdce946
 
 build:
   noarch: python
@@ -37,8 +37,7 @@ requirements:
     - gdown
     - joblib
     - netcdf4
-    - pygeos
-    - regionmask
+    - regionmask >=0.9
     - scipy
 
 test:
