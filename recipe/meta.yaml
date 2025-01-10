@@ -1,5 +1,5 @@
 {% set name = "tams" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/knubez/TAMS/archive/v{{ version }}.tar.gz
-  sha256: 500652cc57ff700b695ec3b88abcefcf6837a287d97ab2f83bcf34b4abdce946
+  sha256: eeed9527ab9b0762f32366555dcea3d3ae29f0426352887a06787433b263e9c8
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit-core
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     #
     # Core dependencies
     - geopandas >=0.10
@@ -41,6 +41,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - tams
 
