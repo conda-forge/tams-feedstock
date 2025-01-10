@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit-core
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     #
     # Core dependencies
     - geopandas >=0.10
@@ -41,6 +41,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - tams
 
