@@ -1,5 +1,5 @@
 {% set name = "tams" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/knubez/TAMS/archive/v{{ version }}.tar.gz
-  sha256: 08dfaaa5bf51af8fb66034cfec53b83ea154a09154cad89052438c07d8f85e76
+  sha256: 1015d6274c2390ab4ae84563ca97b2bbb1bd045e186915970dcacae21e21d5bc
 
 build:
   noarch: python
